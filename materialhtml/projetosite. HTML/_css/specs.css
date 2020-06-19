@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+section#conteudo{
+    width: 1000px; /*largura*/
+    margin: auto;  /*margem*/
+}
+iframe#frame-spec{   /*imagem nda mao */
+    width: 350px;
+    height: 270px;  /*altura*/
+    border: none;   /*borda. none= nenhum*/
+    overflow: hidden; /*esconde conteudo*/
+    
+}
+iframe#frame-spec::-webkit-scrollbar{
+    display: none;        /*conteudo mao*/
+}

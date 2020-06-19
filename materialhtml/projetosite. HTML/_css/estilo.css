@@ -1,0 +1,252 @@
+@charset "UTF-8";
+@import url(https://fonts.google.com/specimen/Titillium+Web?query=tit&selection.family=Titillium+Web:wght@300;700#glyphs)
+@font-face {
+    font-family: 'FonteLogo';
+    src: url("/_fonts/bubblegum-sans-regular.otf");
+}
+body{	/*PAGINA INTEIRA*/
+    font-family: 'arial',sans-serif;					
+    background-color: gray;     /*cor de fundo pagina*/
+    color: rgba(0, 0, 0, 1);
+}
+div#interface {         
+    width: 900px;                /* largura todo conteudo*/
+    background-color: white;   
+    margin-bottom: 10px;                /*margens embaixo*/
+    margin-top: -10px;              /*cima*/ 
+    margin-right:auto ;             /*direita*/ 
+    margin-left: auto;              /*esquerda*/
+    box-shadow: rgba(0, 0, 0, black);   /*sombra em volta objeto*/
+    padding: 10px 10px 10px 10px;         /*centralizar o rexto */
+    
+}   
+p{    /*PARAGRAFOS*/
+    text-align: justify;
+    text-indent: 50px;
+}
+a{ /*links*/
+    color: #420c74;
+    text-decoration: none;
+
+}
+a:hover{  /*sublinhar link*/
+    text-decoration: underline;
+
+}
+header#cabecalho img#icone{    /*imagem do oculos */
+    position: absolute;
+    left: 600px;
+    top: 50px;
+}
+header#cabecalho {
+     border-bottom: 1px #606060 solid; /*coloca linha pra separar*/
+     height: 150px;  /*altura do cabeçalho*/
+     background: url("../_imagens/glass-logo-peq.jpg")no-repeat 0px 80px;
+}
+header#cabecalho h1 {  
+    font-family: 'FonteLogo' , sans-serif;
+    font-size: 30pt;
+    color: #606060;
+    text-shadow: 1px 1px 1px rgba(0,0, 0, 6);
+    padding: 0px;
+    margin-bottom: 0px;
+}
+header#cabecalho h2{
+    font-family: 'Titillium Web', sans-serif;
+    color: #888888;
+    font-size: 15pt;
+    padding: 0px;
+    margin-top: 0px;
+
+}
+
+/* FORMATAÇÃO DE IMAGENS COM LEGENDAS */
+
+figure.foto-legenda{
+    position: relative;
+    border: 8px soli white;
+    box-shadow: 1px 1px 4px black;  
+}
+figure.foto-legenda img {
+    width: 100%;
+    height: 100%;
+}
+figure.foto-legenda figcaption {
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    background-color:rgba(0, 0, 0, 4);
+    color:white;
+    width: 100%;
+    height: 100%;
+    padding: 10p;
+    box-sizing: border-box;
+    transition: opacity 1s;
+}
+figure.foto-legenda:hover figcaption{
+    opacity: 1;
+}
+   
+/* FORMATAÇAO DO MENU */
+nav#menu ul {
+    display: block;
+}
+
+nav#menu ul {
+    list-style: none; 
+    text-transform: uppercase; 
+    position: absolute; 
+    top: -20px;
+    left: 300px; 
+} 
+nav#menu li {
+    display: inline-block;
+    background-color:white;
+    padding: 10px;
+    margin: 2px;
+    transition: background-color 1s;
+}
+nav#menu li:hover{
+    background-color: rgb(145, 145, 189);
+
+}
+nav#menu h1{
+    display: none;  
+}   
+nav#menu a{
+    color: black;
+    text-decoration: none;  
+}
+nav#menu a:hover{
+    color: white;
+    text-decoration: underline;
+}
+section#corpo{
+    display: block;     /*secao principal*/
+    width: 500px;
+    float: left;   /*faz o txto flutuar */
+    border-right: 1px solid #606060; /*borda que vai dividir ao meio */
+    padding-right: 15px; /*config a linh/borda da divisao*/ 
+
+}
+article#noticia-principal h2 {  /* artigo Noticas/ corpo pag*/
+    font-size: 13pt;
+    color: #606060;
+    background-color:#dddddd ;
+    padding-left:10px;   /*ESPACAMENTO*/
+    padding-top: 5px;
+    padding-right: 0px;
+    padding-bottom: 5px;
+    margin-top: 10px;   /*MARGENS*/
+    margin-left: 0px;
+    margin-bottom: 10px;
+    margin-right: 10px;    
+}
+header#cabecalho-artigo h1 {  /*cabecalho noticia*/
+    font-family: 'fontelogo',sans-serif;  /*fonte/tipo letra*/
+    font-size: 20pt; /*tamanho fonte*/
+    color: #606060;
+    margin-bottom: 0px;
+    margin-top: 0px;
+
+}
+.direita {
+    text-align: right;
+}
+header#cabecalho-artigo h2{
+    font-size: 13pt;
+    color: #cecece;
+    background-color: #ffffff;
+    margin: 0px;
+}
+
+header#cabecalho-artigo h3{
+    font-size: 16px;
+    color: #606060;
+
+
+}
+
+}
+
+table#tabelaspec {    /* tabela do id table */
+    border: 1px solid #606060;  /*borda externa*/
+    border-spacing: 0px; /* tira espaço entre tabelas*/
+    margin-left: auto;   /*margens da tabela*/
+    margin-right: auto;
+}
+table#tabelaspec td{    /* formatacao dos td*/
+    border: 1px solid #606060;  /*bordas internas */
+    padding: 10px;    /*espaço dentro tabela*/
+    text-align: center;
+    vertical-align: middle; 
+
+}
+table#tabelaspec td.ce {   /*ce= coluna esquerda*/
+    color: white; /*cor fonte*/
+    background-color:#606060 ;/*cor de fundo*/
+    vertical-align: top;     /*subir txt da linha*/
+    font-weight: bolder; /*colocar negrito*/
+
+
+}
+table#tabelaspec td.cd{    /*cd= coluna direita*/
+    background-color: #cecece; /*cor fundo*/
+
+}
+table#tabelaspec caption{   /*cabecalho tabela*/
+    color: 888888;
+    font-size: 20px;
+    font-weight: bolder;
+
+}
+table#tabelaspec caption span{ /* cabecalho tabela letras miudas*/ 
+    display: block;
+    float: right;
+    color: black;
+    font-size: 8pt;
+    margin-top: 10px;
+
+
+}
+
+aside#lateral{
+    display: block;
+    width: 350px;
+    float: right;  /*flutuar txt*/ 
+    background-color: #dddddd;
+    padding: 10px;
+    margin-top: 10px;  /*margem*/
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 5);/*sombra*/
+
+}
+aside#lateral h1{
+    font-family: 'fontelogo',sans-serif;
+    font-size: 20pt;
+    color: #606060;
+    margin-top: 0px;
+
+    
+
+} 
+aside#lateral h2{
+    background-color: #606060; /*cor fundo*/
+    font-size: 13pt;  /*tamanho fonte*/
+    color: #ffffff; /*cor letras*/
+    padding: 5px;   /*espaço dentro */
+
+
+
+}
+footer#rodape{    /*rodape*/
+    clear: both;   /*limpa e ajusta os comandos aside,section*/
+    border-top:1px solid #606060;  
+
+
+}     
+footer#rodape p{
+    text-align:center ;    /*centralizando txt*/
+    color: blueviolet;
+
+
+}
