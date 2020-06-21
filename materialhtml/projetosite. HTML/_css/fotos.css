@@ -38,9 +38,9 @@ ul#album-fotos li:hover span{ /*letras box aparece quando passa mouse em cima*/
 }
 ul#album-fotos li#foto01{
     background: url('../_imagens/galeria-01.jpg') no-repeat;
-    background-position: 50% 50%;
-    background-size: 400px 400px;
-    background-color: white;
+    background-position: 50% 50%; /*posicionamento imagem*/
+    background-size: 400px 400px;  /*tamanho imagem fundo*/
+    background-color: white;    
 
 }
 ul#album-fotos li#foto01:hover{/*zoom nas fotos*/
