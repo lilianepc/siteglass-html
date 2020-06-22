@@ -1,67 +1,76 @@
-Google Glass
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
 	<meta charset="UTF-8"/>	
 	<title>TUDO SOBRE O GOOGLE Glass</title>
-	<link rel="stylesheet"  href="_css/estilo.css"/>
+    <link rel="stylesheet"  href="_css/estilo.css"/>
+    <link rel="stylesheet" href="_css/form.css"/>
 </head>	
 <script language="javascript" src="_javascript/funcoes.js"></script>
 <body>
 <div id="interface">
 
-	<header id= "cabecalho">
-	<hgroup>
-    <h1>Google Glass</h1>
-    <h2>A revolução do Google está chegando</h2>
-	</hgroup>
+<header id= "cabecalho">
+	    <hgroup>
+            <h1>Google Glass</h1>
+            <h2>A revolução do Google está chegando</h2>
+	    </hgroup>
 	
-	<img id="icone" src="glass-oculos-preto-peq.png"/>
-	
+	<img id="icone" src="_imagens/contato.png"/>
 	<nav id="menu">	
-	<h1>Menu Principal</h1>
-	<ul type="disc">
-		<li onmouseover="mudaFoto('_imagens/Home.png')" onmouseout="mudaFoto('_imagens')"><a href="projeto-glass.html"> Home</a></li>
-		<li onmouseover="mudaFoto('_imagens/especificacoes.png')" onmouseout="mudaFoto('_imagens/especificacoes.png')"><a href="specs.html">Especificações</a></li>
-		<li onmouseover="mudaFoto('_imagens/fotos.png')" onmouseout="mudaFoto('_imagens/especificacoes.png')"><a href="fotos-txt.html">Fotos</a></li>
-		<li onmouseover="mudaFoto('_imagens/multimidia.png')" onmouseout="mudaFoto('_imagens/especificacoes.png')"><a href="multimidia.html">multimidia</a></li>
-		<li onmouseover="mudaFoto('_imagens/contato.png')" onmouseout="mudaFoto('_imagens/especificacoes.png')"><a href="fale-conosco.html">Fale conosco</a></li>
-	</nav>
-	</ul>	
-	</header>
-
+	    <h1>Menu Principal</h1>
+	    <ul type="disc">
+		    <li onmouseover="mudaFoto('_imagens/Home.png')" onmouseout="mudaFoto('_imagens')"><a href="projeto-glass.html"> Home</a></li>
+		    <li onmouseover="mudaFoto('_imagens/especificacoes.png')" onmouseout="mudaFoto('_imagens/especificacoes.png')"><a href="specs.html">Especificações</a></li>
+		    <li onmouseover="mudaFoto('_imagens/fotos.png')" onmouseout="mudaFoto('_imagens/especificacoes.png')"><a href="fotos-txt.html">Fotos</a></li>
+		    <li onmouseover="mudaFoto('_imagens/multimidia.png')" onmouseout="mudaFoto('_imagens/especificacoes.png')"><a href="multimidia.html">multimidia</a></li>
+	    	<li onmouseover="mudaFoto('_imagens/contato.png')" onmouseout="mudaFoto('_imagens/especificacoes.png')"><a href="fale-conosco.html">Fale conosco</a></li>
+	    </ul>
+	</nav>	
+</header>
+<form>
 Fale Conosco > Contato
 Formulário de Contato
 por Gustavo Guanabara
 Atualizado em 01/Maio/2013
 
-Identificação do Usuário
-    Nome:
-    Senha:
-    E-mail:
-    Sexo:
-        - Masculino
-        - Feminino
-    Data de Nascimento:
+<fieldset id="endereco"><legend>Identificação do Usuário</legend>
+    <p><label for="cnome">Nome:</label><input type="text" name="tnome" id="cnome" size="20" maxlength="30" placeholder="NOME COMPLETO"></p>
+    <p><label for="csenha">Senha:</label><input type="password" name="tsenha" id="csenha" size="8" maxlength="8" placeholder="8 DIGITOS"></p>
+    <p><label for="cmail">E-mail:</label><input type="email" name="tmail" id="cmail" size="20" maxlength="40" placeholder="EMAIL"></p>
 
-Endereço do Usuário
-    Logradouro:
-    Número:
+   <fieldset id="sexo"><legend> Sexo:</legend>
+        <input type="radio" name="tSEXO" id="cMASC" checked/> <label for="cMASC">Masculino</label></br>
+        <input type="radio" name="tSEXO" id="cFEM" checked/><label for="cFEM"> Feminino</label>
+    </fieldset>
+   <p> Data de Nascimento:<input type="date" name="tnasc" id="cnasc"></p>
+</fieldset>
+
+<fieldset id="endereco"><legend>Endereço do Usuário</legend>
+
+   <p><label for="crua"> Logradouro:</label><input type="text" name="trua" id="crua" size="20" maxlength="80" placeholder="ENDEREÇO"></p>
+
+   <p><label for="cnum"> Número:</label><input type="number" name="tnun" id="cnum" min="" max="99999">
+
+    <p><label for="cbrro">BAIRRO:</label><input type="text" name="tbrro" id="cbrro" size="20" maxlength="80" placeholder="BAIRRO">
+
     Estado:
     Cidade:
+</fieldset>
 
-Mensagem do Usuário
+<fieldset id="mensagem"><legend>Mensagem do Usuário</legend>
     Grau de Urgência:
-    Mensagem:
+    Mensagem:</fieldset>
 
-Quero um Google Glass
+<fieldset id="pedido"><legend>Quero um Google Glass</legend>
     Gostaria de adquirir um Google Glass quando disponível
     Cor:
     Quantidade:
-    Preço Total: R$
-
-
-[BOTÃO ENVIAR]
+    Preço Total: R$</fieldset>
+     
+    
+    [BOTÃO ENVIAR]</form>
 
 <footer id="rodape">
     <p>Copyright 2013 - by Gustavo Guanabara<br/>
