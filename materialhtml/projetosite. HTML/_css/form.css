@@ -1,0 +1,43 @@
+@charset"UTF-8";
+form {  /*formatando formulario*/
+    width: 800px;
+    margin: auto;  /*margem centralizada*/
+}
+input, textarea{
+    font-family: sans-serif;
+    font-weight: normal;
+    font-size: 13pt;
+    background-color: rgb(255, 255, 255,.8);
+}
+input:hover, textarea:hover { /*quando passar mouse em cima muda cor fundo*/
+    background-color: rgb(228, 222, 222);
+
+}
+legend{ /*cor texto inical*/
+    color: rgb(92, 91, 91);
+    font-weight: bold;
+    font-size: 13pt;
+    font-family: sans-serif;
+
+}
+fieldset { /*bordas*/
+    border-color: rgb(218, 215, 215);
+    margin: 20px;
+    
+}
+fieldset#sexo { /*caixa texto do sexp*/
+    width: 130px;
+}
+fieldset#usuario{  /*imagem fundo */
+    background: url("../_imagens/icone-contato.png") no-repeat 95% 95%;
+
+}
+fieldset#endereco{
+    background: url("../_imagens/icone-endereco.png") no-repeat 95% 95%;
+}
+fieldset#mensagem{
+    background: url("../_imagens/icone-mensagem.png") no-repeat 95% 95%;
+}
+fieldset#pedido{
+    background: url("../_imagens/icone-pagamento.png")no-repeat 95% 95%;
+}

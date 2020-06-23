@@ -6,8 +6,17 @@
 	<title>TUDO SOBRE O GOOGLE Glass</title>
     <link rel="stylesheet"  href="_css/estilo.css"/>
     <link rel="stylesheet" href="_css/form.css"/>
+
+    <script language="javascript" src="_javascript/funcoes.js"></script>
+    <script>
+        function cal_total() {
+            var qtd= parseInt(document.getElementById('cqtd').value);
+            tot = qtd * 1500;
+            document.getElementById('ctot').value = tot
+        }
+    </script>
+
 </head>	
-<script language="javascript" src="_javascript/funcoes.js"></script>
 <body>
 <div id="interface">
 
@@ -29,7 +38,7 @@
 	    </ul>
 	</nav>	
 </header>
-<form method="post" id="fcontato" action="liliane:lilianepires24@hotmail.com">
+<form method="post" id="fcontato" action="liliane:lilianepires24@hotmail.com" oninput="cal_total();">
 
 
 <fieldset id="usuario"><legend>Identificação do Usuário</legend>
@@ -102,19 +111,22 @@
    <p><label for="curg"> Grau de Urgência:</label>
     MÍN<input type="range" name="" id="curg" min="0" max="10" step="2">MÁX</p>
    <p><label for="cmsg">Mensagem:</label>
-   <textarea name="tmsg" id="cmsg" cols="45" rows="5" placeholder="Deixe aqui sua mensagem"></textarea></p>
+   <textarea name="tmsg" id="cmsg" cols="35" rows="5" placeholder="Deixe aqui sua mensagem"></textarea></p>
 </fieldset>
 
 <fieldset id="pedido"><legend>Quero um Google Glass</legend>
-    <p><label for="cped">Gostaria de adquirir um Google Glass quando disponível</p></label>
-    <p><label for="ccor">Cor:</p></label>>
-    <p><label>Quantidade:</label></p>
-    <p><label>Preço Total: R$</p></label>
+   <p><input type="checkbox" name="tped" id="cped" checked/>
+   <label for="cped">Gostaria de adquirir um Google Glass quando disponível</label></p>
+   <p><label for="ccor">Cor:</label>
+   <input type="color" name="tcor" id="ccor"/></p>
+    <p><label>Quantidade:</label>
+   <input type="number" name="tqtd" min="0" max="5" value="0"></p>
+   <p><label for="ctot">Preço Total: R$</label>
+    <input type="text" name="ttot" id="ctot" placeholder="VALOR TOTAL COMPRA"/></p>
 </fieldset>
      
-    
-    [BOTÃO ENVIAR]</form>
-
+    <input type="image" name="tenviar" src="_imagens/botao-enviar.png"/>
+ </form>
 <footer id="rodape">
     <p>Copyright 2013 - by Gustavo Guanabara<br/>
     <a href="https://www.facebook.com/liliane.pires.338"target="_blank"" >Facebook</a>
