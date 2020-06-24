@@ -2,7 +2,7 @@
 
 ul#album-fotos{ /*aalbum-fotos*/
     width: 700px;/*largura*/
-    margin: 0,auto; /*margem 0 esquerda,automatica resto */
+    margin: auto; /*margem 0 esquerda,automatica resto */
     padding: 50px;    /*borda*/
     overflow: hidden;
     list-style: none;
